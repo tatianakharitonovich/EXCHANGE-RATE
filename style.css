@@ -1,0 +1,34 @@
+.main__title {
+	width: 50%;
+	margin: 25px auto;
+}
+
+.main__container {
+	display: flex;
+	width: 40%;
+	margin: auto;
+}
+
+.main__name {
+	width: 65%;
+	margin: 0;
+	padding: 15px;
+	border: 1px solid black;
+}
+
+.main__rate {
+	width: 35%;
+	margin: 0;
+	padding: 15px;
+	border: 1px solid black;
+}
+
+.main__head {
+	font-weight: bold;
+	background-color: pink;
+	text-align: center;
+}
+
+.main__head_name {
+	padding-top: 23px;
+}
