@@ -39,6 +39,7 @@ select {
 	height: 32px;
 	width: 35px;
 	background-color: #FFD700;
+	border: 1px solid black;
 	cursor: pointer;
 	margin-top: 28px;
 }
