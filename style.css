@@ -1,11 +1,44 @@
-.main__title {
-	width: 50%;
-	margin: 25px auto;
+.main {
+	width: 100%;
 }
+
+.main__title, h2 {
+	width: 100%;
+	max-width: 500px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.main__converter_title {
+	background-color: yellow;
+}
+
+.main__converter {
+	width: 100%;
+	max-width: 500px;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+.main__currencyFrom, .main__currencyIn {
+	padding: 10px;
+}
+
+select {
+	font-size: 23px;
+}
+
+.main__inputField {
+	width: 100%;
+	font-size: 23px;
+} 
 
 .main__container {
 	display: flex;
-	width: 40%;
+	width: 100%;
+	max-width: 500px;
 	margin: auto;
 }
 
