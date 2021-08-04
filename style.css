@@ -10,7 +10,7 @@
 }
 
 .main__converter_title {
-	background-color: yellow;
+	background-color: #FFD700;
 }
 
 .main__converter {
@@ -19,7 +19,7 @@
 	margin: auto;
 	display: flex;
 	justify-content: center;
-	align-content: center;
+	align-items: center;
 }
 
 .main__currencyFrom, .main__currencyIn {
@@ -31,8 +31,20 @@ select {
 }
 
 .main__inputField {
-	width: 100%;
+	width: 95%;
 	font-size: 23px;
+}
+
+.main__converter_button {
+	height: 32px;
+	width: 35px;
+	background-color: #FFD700;
+	cursor: pointer;
+	margin-top: 28px;
+}
+
+.main__converter_button:hover {
+	transform: scale(1.1);
 } 
 
 .main__container {

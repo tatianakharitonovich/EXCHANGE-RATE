@@ -2,6 +2,7 @@ const selectFrom = document.getElementById('main__selsect_currencyFrom');
 const selectIn = document.getElementById('main__selsect_currencyIn');
 const inputFrom = document.getElementById('main__input_currencyFrom');
 const inputIn = document.getElementById('main__input_currencyIn');
+const button = document.getElementById('main__converter_button');
 const exrates = [];
 
 inputFrom.addEventListener('input', function (event) {
@@ -10,6 +11,7 @@ inputFrom.addEventListener('input', function (event) {
 
 selectFrom.addEventListener('change', calc);
 selectIn.addEventListener('change', calc);  
+button.addEventListener('click', clear);
 
 function clear () {
     inputIn.value = '';
