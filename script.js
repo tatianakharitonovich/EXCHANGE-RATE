@@ -3,6 +3,8 @@ const selectIn = document.getElementById('main__selsect_currencyIn');
 const inputFrom = document.getElementById('main__input_currencyFrom');
 const inputIn = document.getElementById('main__input_currencyIn');
 const button = document.getElementById('main__converter_button');
+const buttonReverse = document.getElementById('main__converter_button_reverse');
+
 const exrates = [];
 
 inputFrom.addEventListener('input', function (event) {
@@ -12,14 +14,22 @@ inputFrom.addEventListener('input', function (event) {
 selectFrom.addEventListener('change', calc);
 selectIn.addEventListener('change', calc);  
 button.addEventListener('click', clear);
+buttonReverse.addEventListener('click', reverse);
 
 function clear () {
     inputIn.value = '';
     inputFrom.value = '';
 }
 
-inputFrom.addEventListener('input', calc);
+function reverse () {
+	const selectFromValue = selectFrom.value;
+	const selectInValue = selectIn.value;
+	selectFrom.value = selectInValue;
+	selectIn.value = selectFromValue;
+	calc();
+}
 
+inputFrom.addEventListener('input', calc);
 
 function calc () {
 	let officialRateFrom = 1,
