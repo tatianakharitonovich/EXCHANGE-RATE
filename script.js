@@ -4,6 +4,9 @@ const inputFrom = document.getElementById('main__input_currencyFrom');
 const inputIn = document.getElementById('main__input_currencyIn');
 const button = document.getElementById('main__converter_button');
 const buttonReverse = document.getElementById('main__converter_button_reverse');
+const mainContainer = document.querySelector('.main__containerRate');
+
+console.log(mainContainer);
 
 const exrates = [];
 
@@ -88,7 +91,7 @@ function getRate (arr) {
 		curRate.innerHTML = item.Cur_OfficialRate;
 		selectFrom.append(currencyFrom);
 		selectIn.append(currencyIn);
-		document.body.append(container);
+		mainContainer.append(container);
 		container.append(curName);
 		container.append(curRate);
 
